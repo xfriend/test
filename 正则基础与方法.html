@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //早期的网页只是由html以及css构成，js最初诞生的目的是为了实现表单的验证，有些时候我们需要对表单的内容进行验证，验证表单的数据是否符合其对应的格式要求
+    //正则的目的：处理字符串
+    //正则的数据类型为对象
+    // var reg=new RegExp("元字符"，"修饰符")
+    // var reg =new RegExp("a","g");
+    // var str ="agagaagasaagagre";
+    // str=str.replace(reg,"");
+    // console.log(str),
+    // console.log(reg);//   /a/g(红色)
+    // console.dir(reg)//  打印reg的所用属性和方法：重要的flags（修饰符），source（元字符）
+    // console.log(typeof reg)//object
+    // var reg1 =RegExp(reg.source,reg.flags);
+    // console.log(reg1);
+    // console.log(reg===reg1)//false
+
+
+
+    //正则表达式的方法（3种） 
+    //test,检查字符串中是否有正则元字符（即正则的匹配内容） ，有则返回true，没有返回false
+    var reg=/s/g;
+    var bool=reg.test("agajoisavm");
+    console.log(bool)
+    //exec,在字符串中查找是否有符合正则规则的字符，没有返回null,有则返回一个数组
+    var result=reg.exec("safagsaeadsefasssf");
+    var result1=reg.exec("safagsaeadsefasssf");
+    console.log(result)
+    console.log(result1)
+
+    </script>
+</body>
+</html>
